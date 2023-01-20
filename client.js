@@ -30,7 +30,7 @@ new Promise(resolve => {
     });
 
     socket.on('connect', () => { //Identifica o evento de "connect"
-        socket.write('O usuário' + nickname + ' entrou no chat.');//Envia no chat que um novo usuário se conectou.
+        socket.write('O usuário ' + nickname + ' entrou no chat.');//Envia no chat que um novo usuário se conectou.
     });
 
     socket.on('data', data => { //Identifica que foi enviado dados no chat
